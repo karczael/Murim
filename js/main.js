@@ -20,15 +20,15 @@
 
   /* ---------- 캐릭터 데이터 ---------- */
   const CHARS = [
-    { id: "unhwi", name: "운휘", hanja: "雲輝", tag: "hero", role: "주인공 · 전생의 천마. 멸문한 운가장의 마지막 핏줄." },
-    { id: "cheonma", name: "천마", hanja: "天魔", tag: "hero", role: "운휘의 전생. 천하를 굽어본 마교 교주." },
+    { id: "unhwi", name: "운휘", hanja: "雲輝", tag: "lead", role: "주인공 · 전생의 천마. 멸문한 운가장의 마지막 핏줄." },
+    { id: "cheonma", name: "천마", hanja: "天魔", tag: "lead", role: "운휘의 전생. 천하를 굽어본 마교 교주." },
     { id: "daeho", name: "석대호", hanja: "石大虎", tag: "ally", role: "첫 동료. 몸으로 막아 치명타를 무효화하는 의리의 거한." },
     { id: "manchun", name: "만춘", hanja: "萬春", tag: "ally", role: "운가장의 충복 노복. 회귀의 정서적 닻." },
     { id: "gwian", name: "귀안", hanja: "鬼眼", tag: "ally", role: "흑점의 외눈 거간. 강호의 정보와 영약을 파는 상인." },
     { id: "jinhyeolcheon", name: "진혈천", hanja: "陳血天", tag: "enemy", role: "부교주 혈월신수. 천마의 등을 찌른 배신의 칼." },
     { id: "dogung", name: "도굉", hanja: "屠宏", tag: "enemy", role: "혈안나찰. 전마각 수석교두, 제1장의 벽." },
   ];
-  const TAG_LABEL = { hero: "주인공", ally: "동지", enemy: "원수" };
+  const TAG_LABEL = { lead: "주인공", ally: "동지", enemy: "원수" };
 
   const charGrid = document.getElementById("char-grid");
   if (charGrid) {
@@ -36,8 +36,8 @@
       (c) => `
       <article class="char reveal" data-tilt>
         <img src="assets/chars/${c.id}.webp" alt="${c.name}" loading="lazy" />
+        <span class="char__tag ${c.tag}">${TAG_LABEL[c.tag]}</span>
         <div class="char__overlay">
-          <span class="char__tag ${c.tag}">${TAG_LABEL[c.tag]}</span>
           <h3 class="char__name">${c.name}<span class="char__hanja">${c.hanja}</span></h3>
           <p class="char__role">${c.role}</p>
         </div>

@@ -209,7 +209,7 @@ section { position: relative; }
 .char__tag { position: absolute; top: .7rem; left: .7rem; z-index: 2; white-space: nowrap; font-family: var(--serif); font-weight: 700; font-size: .66rem; letter-spacing: .06em; padding: .22em .62em; border-radius: 3px; }
 .char__tag.ally   { background: rgba(217,184,90,.2); color: var(--gold-2); border: 1px solid rgba(217,184,90,.4); }
 .char__tag.enemy  { background: rgba(200,16,46,.2);  color: var(--blood-2); border: 1px solid rgba(200,16,46,.45); }
-.char__tag.hero   { background: rgba(139,59,255,.2); color: var(--qi-2);   border: 1px solid rgba(139,59,255,.45); }
+.char__tag.lead   { background: rgba(139,59,255,.2); color: var(--qi-2);   border: 1px solid rgba(139,59,255,.45); }
 .char__name { font-family: var(--serif); font-weight: 900; font-size: 1.2rem; color: #fff; }
 .char__hanja { font-family: var(--deco); font-size: .9rem; color: var(--gold); margin-left: .35rem; font-weight: 400; }
 .char__role { font-size: .82rem; color: var(--ink-dim); margin-top: .2rem; opacity: 0; max-height: 0; transition: opacity .4s, max-height .4s; }
