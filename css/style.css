@@ -19,7 +19,7 @@
   --line:      rgba(217,184,90,0.18);
   --serif: "Noto Serif KR", serif;
   --sans:  "Noto Sans KR", sans-serif;
-  --deco:  "Ma Shan Zheng", "Noto Serif KR", serif;
+  --deco:  "Noto Serif KR", serif;
   --cinzel:"Cinzel", serif;
   --maxw: 1180px;
 }
@@ -206,7 +206,7 @@ section { position: relative; }
 .char img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform .6s, filter .4s; filter: grayscale(.3) brightness(.78); }
 .char:hover img { transform: scale(1.08); filter: grayscale(0) brightness(.95); }
 .char__overlay { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.1rem; background: linear-gradient(0deg, rgba(7,5,10,.95) 8%, rgba(7,5,10,.35) 45%, transparent); }
-.char__tag { align-self: flex-start; white-space: nowrap; font-family: var(--serif); font-weight: 700; font-size: .68rem; letter-spacing: .1em; padding: .3em .7em; border-radius: 2px; margin-bottom: auto; }
+.char__tag { position: absolute; top: .7rem; left: .7rem; z-index: 2; white-space: nowrap; font-family: var(--serif); font-weight: 700; font-size: .66rem; letter-spacing: .06em; padding: .22em .62em; border-radius: 3px; }
 .char__tag.ally   { background: rgba(217,184,90,.2); color: var(--gold-2); border: 1px solid rgba(217,184,90,.4); }
 .char__tag.enemy  { background: rgba(200,16,46,.2);  color: var(--blood-2); border: 1px solid rgba(200,16,46,.45); }
 .char__tag.hero   { background: rgba(139,59,255,.2); color: var(--qi-2);   border: 1px solid rgba(139,59,255,.45); }

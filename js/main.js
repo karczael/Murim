@@ -26,7 +26,6 @@
     { id: "manchun", name: "만춘", hanja: "萬春", tag: "ally", role: "운가장의 충복 노복. 회귀의 정서적 닻." },
     { id: "gwian", name: "귀안", hanja: "鬼眼", tag: "ally", role: "흑점의 외눈 거간. 강호의 정보와 영약을 파는 상인." },
     { id: "jinhyeolcheon", name: "진혈천", hanja: "陳血天", tag: "enemy", role: "부교주 혈월신수. 천마의 등을 찌른 배신의 칼." },
-    { id: "sadokrin", name: "사독린", hanja: "司獨麟", tag: "enemy", role: "혈검마성. 따뜻한 멘토의 얼굴을 한 진짜 배후." },
     { id: "dogung", name: "도굉", hanja: "屠宏", tag: "enemy", role: "혈안나찰. 전마각 수석교두, 제1장의 벽." },
   ];
   const TAG_LABEL = { hero: "주인공", ally: "동지", enemy: "원수" };
@@ -111,20 +110,6 @@
       { passive: true }
     );
   }
-
-  /* ---------- 사전 예약 폼 (데모) ---------- */
-  const form = document.getElementById("signup");
-  const msg = document.getElementById("signup-msg");
-  form?.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const email = form.querySelector("input").value.trim();
-    if (!email) return;
-    form.reset();
-    if (msg) {
-      msg.hidden = false;
-      msg.textContent = "예약이 접수되었습니다. 출시 소식을 가장 먼저 전해드리겠습니다. 🩸";
-    }
-  });
 
   /* ---------- 불씨/재 파티클 ---------- */
   const canvas = document.getElementById("ember-canvas");
